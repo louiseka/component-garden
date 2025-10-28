@@ -1,25 +1,22 @@
 .wrapper {
   padding: 1rem;
-  border: 1px solid lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: lightgrey;
 }
 
 .links {
   display: flex;
+  font-size: 1.25rem;
 }
 
 .activeLink,
 .inactiveLink {
-  padding: 0 2rem;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .activeLink {
-  color: #000;
-}
-
-.inactiveLink {
-  color: #666;
+  border-bottom: 3px solid var(--secondary-color);
 }
