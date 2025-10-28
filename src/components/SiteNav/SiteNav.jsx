@@ -4,7 +4,9 @@ import styles from "./SiteNav.module.css";
 export default function SiteNav() {
   const navLinks = [
     { label: "Home", url: "/" },
-    { label: "About", url: "/about" },
+    { label: "Components", url: "/components" },
+    { label: "Hooks", url: "/hooks" },
+    { label: "Forms", url: "/forms" },
   ];
 
   return (

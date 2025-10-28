@@ -2,13 +2,13 @@ import styles from "./SiteHeader.module.css";
 
 export default function SiteHeader() {
   return (
-    <div className={styles.wrapper}>
+    <header className={styles.wrapper}>
       <h1 className={styles.heading}>Component Garden</h1>
       <img
         className={styles.icon}
-        src="public/images/seedling-icon.svg"
+        src="../public/images/seedling-icon.svg"
         alt="Green icon of a seedling"
       />
-    </div>
+    </header>
   );
 }

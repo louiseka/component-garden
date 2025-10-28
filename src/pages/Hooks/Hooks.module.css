@@ -1,0 +1,23 @@
+.wrapper {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  font-size: 1.25rem;
+}
+
+.activeLink,
+.inactiveLink {
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.activeLink {
+  border-bottom: 3px solid var(--secondary-color);
+}

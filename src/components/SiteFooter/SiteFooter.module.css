@@ -1,7 +1,7 @@
 .wrapper {
   padding: 3rem 5rem;
   height: 10vh;
-  background-color: var(--secondary-color);
+  background-color: var(--bg-color-footer);
   display: flex;
   flex-direction: column;
   justify-content: left;
