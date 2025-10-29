@@ -12,7 +12,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font);
   color: var(--text-color);
   background-color: var(--bg-color);
 }

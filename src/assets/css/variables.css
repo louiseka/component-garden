@@ -1,7 +1,11 @@
 :root {
+  /* Colours */
   --primary-color: #00a86b;
   --secondary-color: #ffb6b9;
   --text-color: #18191a;
   --bg-color: #fbfcf8;
   --bg-color-footer: #ffeff1;
+
+  /* Font */
+  --primary-font: "Montserrat", sans-serif;
 }
