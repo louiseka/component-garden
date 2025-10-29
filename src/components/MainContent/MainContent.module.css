@@ -4,4 +4,9 @@
   align-items: stretch;
   justify-content: center;
   width: 100%;
+  max-width: 1200px;
+  margin: 3em auto;
+  border-radius: 20px;
+  background-color: var(--bg-color-footer);
+  box-shadow: 0 3px 10px var(--secondary-color);
 }
