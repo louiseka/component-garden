@@ -8,8 +8,6 @@ export default function PlantGrowth() {
   const [killed, setKilled] = useState(true);
   const [message, setMessage] = useState("");
 
-  const plantHeight = count * 10;
-
   const waterPlant = () => {
     setCount((prev) => {
       const newCount = prev + 1;
@@ -41,17 +39,29 @@ export default function PlantGrowth() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.plant_container}>
+        {!watered && (
+          <img
+            style={{ "--height": `${count * 40}px` }}
+            className={styles.plant_img}
+            src="../images/seedling-icon.svg"
+          />
+        )}
+        {watered && (
+          <img src="../images/flower.svg" className={styles.flower_img}></img>
+        )}
         <img
-          style={{ "--height": `${count * 40}px` }}
-          className={styles.plant_img}
-          src="../images/seedling-icon.svg"
-        />
+          className={styles.soil_img}
+          src="../images/soil.svg"
+          alt="Graphic of soil"
+        ></img>
       </div>
-      <div className={styles.actions_container}>
-        <p>{message}</p>
-        <p>Plant Growth Component: {count}</p>
-        {!watered && <button onClick={waterPlant}>Water Plant</button>}
-        {!killed && <button onClick={killPlant}>Kill Plant</button>}
+      <div className={styles.content_container}>
+        <div className={styles.actions_container}>
+          <p>{message}</p>
+          <p>Plant Growth Component: {count}</p>
+          {!watered && <button onClick={waterPlant}>Water Plant</button>}
+          {!killed && <button onClick={killPlant}>Kill Plant</button>}
+        </div>
       </div>
     </div>
   );
