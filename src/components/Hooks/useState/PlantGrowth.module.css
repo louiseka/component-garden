@@ -1,3 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: var(--border-radius-lg);
+  border: var(--border-thin);
+  box-shadow: var(--box-shadow-grey);
+  height: 500px;
+}
+
+.plant_container,
+.actions_container {
+  margin: 1em 2em 3em;
+}
+
+.plant_container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.actions_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .plant_img {
   height: var(--height, 100px);
   transition: height 0.3s ease, background-color 0.3s ease;

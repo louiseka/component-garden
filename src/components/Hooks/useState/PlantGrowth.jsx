@@ -39,17 +39,20 @@ export default function PlantGrowth() {
   };
 
   return (
-    <div>
-      <h3>Water the Plant</h3>
-      <p>{message}</p>
-      <p>Plant Growth Component: {count}</p>
-      <img
-        style={{ "--height": `${count * 50}px` }}
-        className={styles.plant_img}
-        src="../images/seedling-icon.svg"
-      />
-      {!watered && <button onClick={waterPlant}>Water Plant</button>}
-      {!killed && <button onClick={killPlant}>Kill Plant</button>}
+    <div className={styles.wrapper}>
+      <div className={styles.plant_container}>
+        <img
+          style={{ "--height": `${count * 40}px` }}
+          className={styles.plant_img}
+          src="../images/seedling-icon.svg"
+        />
+      </div>
+      <div className={styles.actions_container}>
+        <p>{message}</p>
+        <p>Plant Growth Component: {count}</p>
+        {!watered && <button onClick={waterPlant}>Water Plant</button>}
+        {!killed && <button onClick={killPlant}>Kill Plant</button>}
+      </div>
     </div>
   );
 }

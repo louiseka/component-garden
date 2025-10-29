@@ -8,4 +8,12 @@
 
   /* Font */
   --primary-font: "Montserrat", sans-serif;
+
+  /* Borders */
+  --border-radius-lg: 18px;
+
+  --border-thin: 1.5px solid #e5e5e5;
+
+  /* Box Shadows */
+  --box-shadow-grey: 0 3px 10px #e5e5e5;
 }
