@@ -6,7 +6,7 @@ export default function SiteHeader() {
       <h1 className={styles.heading}>Component Garden</h1>
       <img
         className={styles.icon}
-        src="../public/images/seedling-icon.svg"
+        src="/images/seedling-icon.svg"
         alt="Green icon of a seedling"
       />
     </header>
