@@ -22,17 +22,17 @@ export default function LoginForm() {
   };
 
   return (
-    <>
+    <div className={styles.wrapper}>
       {loggedIn && (
         <div>
-          <h3>Welcome back!</h3>
-          <p>{message}</p>
+          <h3 className={styles.header}>Welcome back!</h3>
+          <p className={styles.message}>{message}</p>
         </div>
       )}
       {!loggedIn && (
         <form onSubmit={handleSubmit} className={styles.form}>
-          <h3 className={styles.form_header}>Login to your account</h3>
-          {message && <p>{message}</p>}
+          <h3 className={styles.header}>Login to your account</h3>
+          {message && <p className={styles.message}>{message}</p>}
           <fieldset className={styles.form_fieldset}>
             <label className={styles.form_label} htmlFor="email">
               Enter your email address:
@@ -66,6 +66,6 @@ export default function LoginForm() {
           </button>
         </form>
       )}
-    </>
+    </div>
   );
 }
