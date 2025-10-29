@@ -9,7 +9,7 @@
 }
 
 .plant_container,
-.actions_container {
+.content_container {
   margin: 1em 2em 3em;
 }
 
@@ -20,13 +20,59 @@
   align-items: flex-end;
 }
 
-.actions_container {
+.content_container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
+}
+
+.soil_img {
+  max-width: 300px;
+  position: absolute;
+  z-index: 1;
+}
+
+.flower_img {
+  max-width: 380px;
+  margin: 1em 0;
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.6);
+  animation: bloomIn 1.2s ease forwards;
+  transform-origin: bottom center;
 }
 
 .plant_img {
   height: var(--height, 100px);
   transition: height 0.3s ease, background-color 0.3s ease;
+  z-index: 2;
+  margin: 2.8em 0;
+  animation: growUp 0.8s ease forwards;
+  transform-origin: bottom center;
+}
+
+@keyframes growUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes bloomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
