@@ -7,6 +7,7 @@ export default function SiteNav() {
     { label: "Components", url: "/components" },
     { label: "Hooks", url: "/hooks" },
     { label: "Forms", url: "/forms" },
+    { label: "State Management", url: "/state-management" },
   ];
 
   return (
