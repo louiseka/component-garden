@@ -7,7 +7,11 @@ export default function UseState() {
       <div className={styles.text}>
         <h3>Water the Plant</h3>
 
-        <p>This is useState page</p>
+        <p>
+          An interactive React component that uses useState and conditional
+          rendering to simulate a plant growing or dying based on user actions.
+          Click the 'Water Plant' button to make the plant grow.
+        </p>
       </div>
 
       <PlantGrowth />
