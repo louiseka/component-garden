@@ -58,9 +58,20 @@ export default function PlantGrowth() {
       <div className={styles.content_container}>
         <div className={styles.actions_container}>
           <p>{message}</p>
-          <p>Plant Growth Component: {count}</p>
-          {!watered && <button onClick={waterPlant}>Water Plant</button>}
-          {!killed && <button onClick={killPlant}>Kill Plant</button>}
+          <p>
+            The plant is currently:
+            <span className={styles.text_bold}> {count} </span> cm
+          </p>
+          {!watered && (
+            <button className={styles.action_button} onClick={waterPlant}>
+              Water Plant
+            </button>
+          )}
+          {!killed && (
+            <button className={styles.action_button} onClick={killPlant}>
+              Kill Plant
+            </button>
+          )}
         </div>
       </div>
     </div>

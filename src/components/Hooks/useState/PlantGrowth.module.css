@@ -6,6 +6,7 @@
   border: var(--border-thin);
   box-shadow: var(--box-shadow-grey);
   height: 500px;
+  width: 900px;
 }
 
 .plant_container,
@@ -24,6 +25,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.text_bold {
+  font-weight: 500;
+}
+
+.action_button {
+  border: none;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  font-size: 1.1rem;
+  padding: 1em 1.5em;
+  margin: 1.8em 1em 0 0;
+  cursor: pointer;
 }
 
 .soil_img {
