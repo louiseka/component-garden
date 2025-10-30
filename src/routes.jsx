@@ -7,7 +7,6 @@ import UseState from "./pages/Hooks/UseState";
 import UseEffect from "./pages/Hooks/UseEffect";
 import StateManagement from "./pages/StateManagement/StateManagement";
 import Redux from "./pages/StateManagement/Redux";
-import UseContext from "./pages/StateManagement/useContext";
 
 const routes = [
   {
@@ -43,10 +42,7 @@ const routes = [
       {
         path: "state-management",
         element: <StateManagement />,
-        children: [
-          { path: "redux", element: <Redux /> },
-          { path: "usecontext", element: <UseContext /> },
-        ],
+        children: [{ path: "redux", element: <Redux /> }],
       },
     ],
   },
