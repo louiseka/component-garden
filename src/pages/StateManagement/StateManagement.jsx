@@ -15,6 +15,14 @@ export default function StateManagement() {
         >
           Redux
         </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? styles.activeLink : styles.inactiveLink
+          }
+          to="usecontext"
+        >
+          useContext
+        </NavLink>
       </nav>
       <Outlet />
     </section>
