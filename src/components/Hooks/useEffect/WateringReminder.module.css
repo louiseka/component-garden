@@ -1,0 +1,89 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: var(--border-radius-lg);
+  border: var(--border-thin);
+  box-shadow: var(--box-shadow-grey);
+  height: 500px;
+  width: 900px;
+}
+
+.plant_container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.content_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.text_bold {
+  font-weight: 500;
+}
+
+.action_button {
+  border: none;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  font-size: 1.1rem;
+  padding: 1em 1.5em;
+  margin: 1.8em 1em 0 0;
+  cursor: pointer;
+}
+
+.soil_img {
+  max-width: 300px;
+  position: absolute;
+  z-index: 1;
+}
+
+.flower_img {
+  max-width: 350px;
+  margin: 1em 0;
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.6);
+  animation: bloomIn 1.2s ease forwards;
+  transform-origin: bottom center;
+}
+
+.plant_img {
+  height: 350px;
+  transition: height 0.3s ease, background-color 0.3s ease;
+  z-index: 2;
+  margin: 0 0 2em;
+  animation: growUp 0.8s ease forwards;
+  transform-origin: bottom center;
+}
+
+@keyframes growUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes bloomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
