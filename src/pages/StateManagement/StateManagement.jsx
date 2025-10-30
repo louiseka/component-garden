@@ -19,6 +19,14 @@ export default function StateManagement() {
           className={({ isActive }) =>
             isActive ? styles.activeLink : styles.inactiveLink
           }
+          to="zustand"
+        >
+          Zustand
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? styles.activeLink : styles.inactiveLink
+          }
           to="usecontext"
         >
           useContext

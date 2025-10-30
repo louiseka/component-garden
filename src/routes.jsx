@@ -8,6 +8,7 @@ import UseEffect from "./pages/Hooks/UseEffect";
 import StateManagement from "./pages/StateManagement/StateManagement";
 import Redux from "./pages/StateManagement/Redux";
 import Context from "./pages/StateManagement/Context";
+import Zustand from "./pages/StateManagement/Zustand";
 
 const routes = [
   {
@@ -45,6 +46,7 @@ const routes = [
         element: <StateManagement />,
         children: [
           { path: "redux", element: <Redux /> },
+          { path: "zustand", element: <Zustand /> },
           { path: "usecontext", element: <Context /> },
         ],
       },
