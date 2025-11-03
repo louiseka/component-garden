@@ -13,11 +13,13 @@ Component Garden is a React playground ("garden") showcasing my knowledge and pr
 - React
 - React Router
 - Zustand
+- CSS Modules
 
 ## Features
 
 - Custom reusable UI components
 - Global state management with Zustand
 - React Hooks practice (useEffect, useMemo, custom hooks, etc.)
+- Scoped component styling with CSS Modules
 - Routing with React Router
 - Component catalogue/playground UI
