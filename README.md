@@ -2,7 +2,7 @@
 
 ## Description
 
-Component Garden is a React playground (garden) showcasing my knowledge and practice of React Hooks, Reusable Components, and State Management (including Zustand).
+Component Garden is a React playground ("garden") showcasing my knowledge and practice of React Hooks, reusable components, and state management (including Zustand). It serves as a personal space to experiment, refine patterns, and demonstrate component design.
 
 ## Live Demo
 
