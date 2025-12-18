@@ -5,10 +5,12 @@ import MainContent from "../MainContent/MainContent";
 
 export default function Root() {
   return (
-    <div className={styles.wrapper}>
-      <SiteHeader />
-      <MainContent />
+    <>
+      <div className={styles.wrapper}>
+        <SiteHeader />
+        <MainContent />
+      </div>
       <SiteFooter />
-    </div>
+    </>
   );
 }

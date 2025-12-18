@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <section className={styles.wrapper}>
-      <div>
+      <div className={styles.heroBanner}>
         <h1 className={styles.header}>
           A garden where I grow React components.
         </h1>
@@ -21,6 +21,10 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />
