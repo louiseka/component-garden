@@ -1,6 +1,7 @@
 .cardContainer {
   border: var(--border-thin);
-  max-width: 250px;
+  margin: 1em;
+  max-width: auto;
   height: auto;
   border-radius: 15px;
   display: flex;
@@ -26,4 +27,16 @@
   border-radius: 15px;
   text-decoration: none;
   color: (var(--text-color));
+}
+
+@media (min-width: 595px) {
+  .cardContainer {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .cardContainer {
+    margin: 0;
+  }
 }
