@@ -3,9 +3,9 @@ import Card from "../../components/Components/Card/Card";
 
 export default function Home() {
   const cardData = [
-    { title: "Water Flower", imgUrl: "", urlSlug: "" },
-    { title: "Look after Flower", imgUrl: "", urlSlug: "" },
-    { title: "Garden Gate", imgUrl: "", urlSlug: "" },
+    { title: "Water the Flower", imgUrl: "", path: "/hooks/usestate" },
+    { title: "Look after Flower", imgUrl: "", path: "/hooks/useeffect" },
+    { title: "Garden Gate", imgUrl: "", path: "/forms" },
   ];
 
   return (
@@ -21,14 +21,14 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {cardData.map((data, index) => (
+          <Card
+            key={index}
+            title={data.title}
+            imgUrl={data.imgUrl}
+            path={data.path}
+          />
+        ))}
       </div>
     </section>
   );
