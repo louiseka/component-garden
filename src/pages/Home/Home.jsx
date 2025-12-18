@@ -1,4 +1,5 @@
 import styles from "./Home.module.css";
+import Card from "../../components/Components/Card/Card";
 
 export default function Home() {
   return (
@@ -24,7 +25,11 @@ export default function Home() {
       </div>
       <div>
         <h2>React Garden Showcase</h2>
-        <div></div>
+        <div className={styles.grid}>
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
     </section>
   );

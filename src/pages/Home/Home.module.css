@@ -51,3 +51,26 @@
   color: #fff;
   font-weight: 500;
 }
+
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 1.5rem auto;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 886px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1450px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
