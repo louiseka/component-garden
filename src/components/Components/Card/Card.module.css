@@ -2,6 +2,7 @@
   border: var(--border-thin);
   margin: 1em;
   max-width: auto;
+  min-height: 350px;
   height: auto;
   border-radius: 15px;
   display: flex;
@@ -20,10 +21,15 @@
   margin: 1.5em 0 1em;
 }
 
+.cardDescription {
+  padding: 0.5em 0.8rem;
+  text-align: center;
+}
+
 .cardLink {
   border: var(--border-thin);
   padding: 1em;
-  margin: 0 0 1em;
+  margin: auto 0 1em;
   border-radius: 15px;
   text-decoration: none;
   color: (var(--text-color));

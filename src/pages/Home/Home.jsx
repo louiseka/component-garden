@@ -3,9 +3,27 @@ import Card from "../../components/Components/Card/Card";
 
 export default function Home() {
   const cardData = [
-    { title: "Water the Flower", imgUrl: "", path: "/hooks/usestate" },
-    { title: "Look after Flower", imgUrl: "", path: "/hooks/useeffect" },
-    { title: "Garden Gate", imgUrl: "", path: "/forms" },
+    {
+      title: "Grow your Plant",
+      description:
+        "useState and conditional rendering to simulate a plant growing or dying based on user actions.",
+      imgUrl: "",
+      path: "/hooks/usestate",
+    },
+    {
+      title: "Remember to water!",
+      description:
+        "Demonstrating timed side effects and dynamic UI updates in React.",
+      imgUrl: "",
+      path: "/hooks/useeffect",
+    },
+    {
+      title: "Garden Gate",
+      description:
+        "Handling controlled inputs, basic form validation, and conditional rendering in React.",
+      imgUrl: "",
+      path: "/forms",
+    },
   ];
 
   return (
@@ -15,8 +33,9 @@ export default function Home() {
           A garden where I grow React components.
         </h1>
         <p className={styles.tagline}>
-          Learning, experimenting, and creating better code - one component at a
-          time.
+          A collection of React components presented as a growing garden -
+          explore real examples of state management, hooks, forms, and user
+          interface logic in action.
         </p>
       </div>
 
@@ -25,6 +44,7 @@ export default function Home() {
           <Card
             key={index}
             title={data.title}
+            description={data.description}
             imgUrl={data.imgUrl}
             path={data.path}
           />
