@@ -40,9 +40,9 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        {cardData.map((data, index) => (
+        {cardData.map((data) => (
           <Card
-            key={index}
+            key={crypto.randomUUID()}
             title={data.title}
             description={data.description}
             imgUrl={data.imgUrl}
