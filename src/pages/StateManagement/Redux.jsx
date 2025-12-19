@@ -22,11 +22,7 @@ export default function Redux() {
       </Provider>
       <div className={styles.textContainer}>
         <h3>Look, there's a fox in the Garden!</h3>
-        <p>
-          Watering Reminder lets users add plant reminders. It uses Redux
-          Toolkit to manage the global list of plants, with useSelector to read
-          state and useDispatch to add new plants efficiently.
-        </p>
+        <p>....</p>
       </div>
       <Provider store={store}>
         <RandomFox />
