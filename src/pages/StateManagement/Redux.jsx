@@ -1,8 +1,10 @@
 import { Provider } from "react-redux";
 import { store } from "../../state/store";
 
-import WateringReminder from "../../components/StateManagement/Redux/WateringReminder";
+import WateringReminder from "../../components/StateManagement/Redux/WateringReminder/WateringReminder";
 import styles from "./Redux.module.css";
+
+import RandomFox from "../../components/StateManagement/Redux/PlantSpecies/RandomFox";
 
 export default function Redux() {
   return (
@@ -18,6 +20,7 @@ export default function Redux() {
       <Provider store={store}>
         <WateringReminder />
       </Provider>
+      <RandomFox />
     </section>
   );
 }
