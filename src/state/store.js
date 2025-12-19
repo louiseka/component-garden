@@ -1,17 +1,7 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 
-const plantsSlice = createSlice({
-  name: "plants",
-  initialState: [],
-  reducers: {
-    addPlant: (state, action) => {
-      state.push(action.payload);
-    },
-  },
-});
-
-export const { addPlant } = plantsSlice.actions;
+import plantsReducer from "../slices/PlantsSlice";
 
 export const store = configureStore({
-  reducer: { plants: plantsSlice.reducer },
+  reducer: { plants: plantsReducer },
 });

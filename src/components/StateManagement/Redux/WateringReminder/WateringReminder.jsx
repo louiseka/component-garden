@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addPlant } from "../../../state/store";
+import { addPlant } from "../../../../slices/PlantsSlice";
 
 import styles from "./WateringReminder.module.css";
 
