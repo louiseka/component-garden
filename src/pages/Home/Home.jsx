@@ -33,9 +33,9 @@ export default function Home() {
           A garden where I grow React components.
         </h1>
         <p className={styles.tagline}>
-          A collection of React components presented as a growing garden -
-          explore real examples of state management, hooks, forms, and user
-          interface logic in action.
+          This project is still a work in progress...But here is a collection of
+          React components presented as a growing garden - explore real examples
+          of state management, hooks, forms, and user interface logic in action.
         </p>
       </div>
 
