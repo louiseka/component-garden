@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRandomFoxImg } from "../../../../slices/FoxSlice";
-import Loading from "../../../Components/Loading/Loading";
 
 export default function RandomFox() {
   const dispatch = useDispatch();
