@@ -10,6 +10,8 @@ import Redux from "./pages/StateManagement/Redux";
 import Context from "./pages/StateManagement/Context";
 import Zustand from "./pages/StateManagement/Zustand";
 
+import { Navigate } from "react-router-dom";
+
 const routes = [
   {
     path: "/",
@@ -28,6 +30,10 @@ const routes = [
         element: <Hooks />,
         children: [
           {
+            index: true,
+            element: <Navigate to="usestate" replace />,
+          },
+          {
             path: "usestate",
             element: <UseState />,
           },
@@ -45,6 +51,7 @@ const routes = [
         path: "state-management",
         element: <StateManagement />,
         children: [
+          { index: true, element: <Navigate to="redux" replace /> },
           { path: "redux", element: <Redux /> },
           { path: "zustand", element: <Zustand /> },
           { path: "usecontext", element: <Context /> },
