@@ -7,16 +7,26 @@
 
 .links {
   display: flex;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .activeLink,
 .inactiveLink {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   color: var(--text-color);
 }
 
 .activeLink {
   border-bottom: 3px solid var(--secondary-color);
+}
+
+@media (min-width: 595px) {
+  .links {
+    font-size: 1.25rem;
+  }
+  .activeLink,
+  .inactiveLink {
+    padding: 0.5rem 1.6rem;
+  }
 }

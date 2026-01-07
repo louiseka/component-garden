@@ -21,10 +21,10 @@ const routes = [
         path: "",
         element: <Home />,
       },
-      {
-        path: "components",
-        element: <Components />,
-      },
+      // {
+      //   path: "components",
+      //   element: <Components />,
+      // },
       {
         path: "hooks",
         element: <Hooks />,
