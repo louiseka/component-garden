@@ -1,18 +1,18 @@
 .wrapper {
-  padding: 2rem 0;
+  padding: 1.25rem 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .heading {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: var(--primary-color);
 }
 
 .icon {
-  width: 60px;
+  width: 30px;
 }
 
 .logo {
@@ -21,8 +21,21 @@
   align-items: center;
 }
 
+@media (min-width: 527px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  .icon {
+    width: 60px;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .wrapper {
-    flex-direction: row;
+    flex-direction: row; /* optional, for very wide screens */
   }
 }
