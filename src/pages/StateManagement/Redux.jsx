@@ -17,16 +17,20 @@ export default function Redux() {
           state and useDispatch to add new plants efficiently.
         </p>
       </div>
-      <Provider store={store}>
-        <WateringReminder />
-      </Provider>
+      <div className={styles.componentContainer}>
+        <Provider store={store}>
+          <WateringReminder />
+        </Provider>
+      </div>
       <div className={styles.textContainer}>
         <h3>Look, there's a fox in the Garden!</h3>
         <p>....</p>
       </div>
-      <Provider store={store}>
-        <RandomFox />
-      </Provider>
+      <div className={styles.componentContainer}>
+        <Provider store={store}>
+          <RandomFox />
+        </Provider>
+      </div>
     </section>
   );
 }

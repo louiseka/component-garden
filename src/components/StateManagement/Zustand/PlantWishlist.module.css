@@ -4,7 +4,6 @@
   margin: 1em 4em;
   padding: 1em;
   border: var(--border-thin);
-  background-color: #fff;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--box-shadow-grey);
   display: flex;
@@ -33,6 +32,9 @@
 .form_input {
   padding: 1em;
   font-family: var(--primary-font);
+  background-color: transparent;
+  border: var(--border-thin);
+  border-radius: var(--border-radius-sm);
 }
 
 .form_button {

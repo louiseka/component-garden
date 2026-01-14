@@ -1,7 +1,6 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  background-color: #fff;
   border-radius: var(--border-radius-lg);
   border: var(--border-thin);
   box-shadow: var(--box-shadow-grey);

@@ -12,7 +12,9 @@ export default function Zustand() {
           displayed in a styled list.
         </p>
       </div>
-      <PlantWishlist />
+      <div className={styles.componentContainer}>
+        <PlantWishlist />
+      </div>
     </section>
   );
 }

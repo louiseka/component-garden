@@ -1,4 +1,8 @@
-.texContainer {
-  margin: 2em auto;
-  max-width: 800px;
+.textContainer {
+  margin: 2em;
+}
+
+.componentContainer {
+  display: flex;
+  justify-content: center;
 }

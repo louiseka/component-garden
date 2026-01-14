@@ -1,4 +1,8 @@
 .text {
   margin: 2em;
-  max-width: 800px;
+}
+
+.componentContainer {
+  display: flex;
+  justify-content: center;
 }

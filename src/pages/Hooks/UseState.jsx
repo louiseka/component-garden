@@ -13,8 +13,9 @@ export default function UseState() {
           Click the 'Water Plant' button to make the plant grow.
         </p>
       </div>
-
-      <PlantGrowth />
+      <div className={styles.componentContainer}>
+        <PlantGrowth />
+      </div>
     </div>
   );
 }

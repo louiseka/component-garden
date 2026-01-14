@@ -13,7 +13,9 @@ export default function UseEffect() {
           side effects and dynamic UI updates in React.
         </p>
       </div>
-      <WateringReminder />
+      <div className={styles.componentContainer}>
+        <WateringReminder />
+      </div>
     </div>
   );
 }
