@@ -1,9 +1,7 @@
 import styles from "./Home.module.css";
 import Card from "../../components/Components/Card/Card";
-import { v4 as uuidv4 } from "uuid";
 
 export default function Home() {
-  const id = uuidv4();
   const cardData = [
     {
       title: "Grow your Plant",
@@ -44,7 +42,7 @@ export default function Home() {
       <div className={styles.grid}>
         {cardData.map((data) => (
           <Card
-            key={id}
+            key={data.path}
             title={data.title}
             description={data.description}
             imgUrl={data.imgUrl}
