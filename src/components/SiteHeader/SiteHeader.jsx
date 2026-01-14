@@ -17,7 +17,7 @@ export default function SiteHeader() {
   return (
     <header className={styles.wrapper}>
       <div className={styles.logo}>
-        <h1 className={styles.heading}>Component Garden</h1>
+        <p className={styles.heading}>Component Garden</p>
         <img
           className={styles.icon}
           src="/images/seedling-icon.svg"
