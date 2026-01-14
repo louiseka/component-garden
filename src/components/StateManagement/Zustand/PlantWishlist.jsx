@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { useState } from "react";
-
+import CodeButton from "../../Components/CodeButton/CodeButton";
 import styles from "./PlantWishlist.module.css";
 
 const usePlantStore = create((set) => ({
@@ -21,6 +21,11 @@ export default function PlantWishlist() {
 
   return (
     <section className={styles.wrapper}>
+      <CodeButton
+        href={
+          "https://github.com/louiseka/component-garden/blob/main/src/components/StateManagement/Zustand/PlantWishlist.jsx"
+        }
+      />
       <div>
         <form onSubmit={handleSubmit}>
           <fieldset className={styles.form_fieldset}>

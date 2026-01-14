@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addPlant } from "../../../../slices/PlantsSlice";
-
+import CodeButton from "../../../Components/CodeButton/CodeButton";
 import styles from "./WateringReminder.module.css";
 
 export default function WateringReminder() {
@@ -16,6 +16,11 @@ export default function WateringReminder() {
 
   return (
     <section className={styles.wrapper}>
+      <CodeButton
+        href={
+          "https://github.com/louiseka/component-garden/blob/main/src/components/StateManagement/Redux/WateringReminder/WateringReminder.jsx"
+        }
+      />
       <div>
         <form onSubmit={handleSubmit}>
           <fieldset className={styles.form_fieldset}>

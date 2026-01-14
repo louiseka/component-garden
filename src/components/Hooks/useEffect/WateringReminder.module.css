@@ -4,8 +4,15 @@
   border-radius: var(--border-radius-lg);
   border: var(--border-thin);
   box-shadow: var(--box-shadow-grey);
-  height: 500px;
+  height: auto;
   width: 900px;
+  position: relative;
+}
+
+.componentLink {
+  position: absolute;
+  top: 16px;
+  right: 30px;
 }
 
 .plant_container {
@@ -19,7 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1em 0;
+  margin: 3.5em 0 0;
 }
 
 .text_bold {
@@ -32,7 +39,7 @@
   font-family: var(--primary-font);
   font-size: 1.1rem;
   padding: 1em 1.5em;
-  margin: 1.8em 1em 0 0;
+  margin: 1.8em 1em 1em 0;
   cursor: pointer;
 }
 

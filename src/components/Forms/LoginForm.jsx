@@ -1,5 +1,6 @@
 import styles from "./LoginForm.module.css";
 import { useState } from "react";
+import CodeButton from "../Components/CodeButton/CodeButton";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -23,6 +24,11 @@ export default function LoginForm() {
 
   return (
     <div className={styles.wrapper}>
+      <CodeButton
+        href={
+          "https://github.com/louiseka/component-garden/blob/main/src/components/Forms/LoginForm.jsx"
+        }
+      />
       {loggedIn && (
         <div>
           <h3 className={styles.header}>Welcome back!</h3>

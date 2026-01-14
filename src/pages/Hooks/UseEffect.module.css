@@ -1,6 +1,17 @@
-.text {
+.textContainer {
   margin: 2em;
 }
+
+.componentDescription {
+  margin: 0.5em 0 1.5em;
+}
+
+.componentLink:hover,
+.componentLink:active,
+.componentLink:focus {
+  border-bottom: 1.5px solid var(--secondary-color);
+}
+
 .componentContainer {
   display: flex;
   justify-content: center;

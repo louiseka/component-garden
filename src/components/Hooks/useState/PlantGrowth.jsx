@@ -1,6 +1,6 @@
 import styles from "./PlantGrowth.module.css";
-
 import { useState } from "react";
+import CodeButton from "../../Components/CodeButton/CodeButton";
 
 export default function PlantGrowth() {
   const [count, setCount] = useState(0);
@@ -57,6 +57,11 @@ export default function PlantGrowth() {
       </div>
       <div className={styles.content_container}>
         <div className={styles.actions_container}>
+          <CodeButton
+            href={
+              "https://github.com/louiseka/component-garden/blob/main/src/components/Hooks/useState/PlantGrowth.jsx"
+            }
+          />
           <p>{message}</p>
           <p>
             The plant is currently:
