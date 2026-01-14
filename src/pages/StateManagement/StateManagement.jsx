@@ -7,9 +7,9 @@ export default function StateManagement() {
     <section className={styles.wrapper}>
       <h1 className={styles.heading}>StateManagement</h1>
       <p className={styles.tagline}>
-        This project is still a work in progress...But here is a collection of
-        React components presented as a growing garden - explore real examples
-        of state management, hooks, forms, and user interface logic in action.
+        Examples of managing and sharing state using Redux and Zustand. This
+        page highlights common patterns for predictable updates, global state,
+        and scalable data flow in React applications.
       </p>
       <nav className={styles.links}>
         <NavLink

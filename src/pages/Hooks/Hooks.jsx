@@ -6,9 +6,9 @@ export default function Hooks() {
     <div className={styles.wrapper}>
       <h1 className={styles.heading}>Hooks</h1>
       <p className={styles.tagline}>
-        This project is still a work in progress...But here is a collection of
-        React components presented as a growing garden - explore real examples
-        of state management, hooks, forms, and user interface logic in action.
+        Watch components grow and respond over time using useState and
+        useEffect. These examples show how state changes and side effects work
+        together to create dynamic, reactive UIs.
       </p>
       <div>
         <nav className={styles.links}>

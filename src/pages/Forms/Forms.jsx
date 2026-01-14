@@ -6,9 +6,9 @@ export default function Forms() {
     <section className={styles.wrapper}>
       <h1 className={styles.heading}>Forms</h1>
       <p className={styles.tagline}>
-        This project is still a work in progress...But here is a collection of
-        React components presented as a growing garden - explore real examples
-        of state management, hooks, forms, and user interface logic in action.
+        A simple login form where user input takes root. This example shows how
+        form state, validation, and submission work together in a clean,
+        predictable flow.
       </p>
       <div className={styles.componentContainer}>
         <div className={styles.text}>
