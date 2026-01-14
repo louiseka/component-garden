@@ -1,0 +1,14 @@
+.codeButton {
+  text-decoration: none;
+  padding: 0.5em;
+  border: var(--border-thin);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-color);
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  position: absolute;
+  top: 16px;
+  right: 30px;
+}
