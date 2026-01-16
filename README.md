@@ -1,25 +1,53 @@
-# Component Garden
+# Component Garden 🌱
 
-## Description
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![React Router](https://img.shields.io/badge/React%20Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=zustand&logoColor=white)
+![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=for-the-badge&logo=css3&logoColor=white)
 
-Component Garden is a React playground ("garden") showcasing my knowledge and practice of React Hooks, reusable components, and state management (including Zustand). It serves as a personal space to experiment, refine patterns, and demonstrate component design.
+## Live Project
+🌐 **Live Site:** https://component-garden.netlify.app/
 
-## Live Demo
+## What is Component Garden?
+**Component Garden** is a React playground (“garden”) designed to showcase my knowledge and practice of:  
+- React Hooks  
+- Reusable components  
+- State management with **Zustand**  
 
-[View live site](https://component-garden.netlify.app/)
-
-## Technologies Used
-
-- React
-- React Router
-- Zustand
-- CSS Modules
+It serves as a personal space to experiment, refine patterns, and demonstrate component design.
 
 ## Features
+- **Custom reusable UI components**  
+- **Global state management** with Zustand  
+- Practice with **React Hooks** (useEffect, useMemo, custom hooks)  
+- Scoped component styling using **CSS Modules**  
+- Routing implemented with **React Router**  
+- Component catalogue / playground interface for experimentation  
 
-- Custom reusable UI components
-- Global state management with Zustand
-- React Hooks practice (useEffect, useMemo, custom hooks, etc.)
-- Scoped component styling with CSS Modules
-- Routing with React Router
-- Component catalogue/playground UI
+## Technologies Used
+- **React** – Component-based UI  
+- **React Router** – Client-side routing  
+- **Zustand** – Global state management  
+- **CSS Modules** – Component-scoped styling  
+
+## Future Improvements
+- Add more reusable components and design patterns  
+- Enhance mobile responsiveness  
+- Add live examples with interactive props and state  
+
+## Installation (Local Development)
+To run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/component-garden.git
+
+# Navigate into the project directory
+cd component-garden
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
