@@ -3,6 +3,7 @@
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![React Router](https://img.shields.io/badge/React%20Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=zustand&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
 ![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=for-the-badge&logo=css3&logoColor=white)
 
 ## Live Project
@@ -12,13 +13,13 @@
 **Component Garden** is a React playground (“garden”) designed to showcase my knowledge and practice of:  
 - React Hooks  
 - Reusable components  
-- State management with **Zustand**  
+- State management with **Redux** and **Zustand**  
 
 It serves as a personal space to experiment, refine patterns, and demonstrate component design.
 
 ## Features
 - **Custom reusable UI components**  
-- **Global state management** with Zustand  
+- **Global state management** with Zustand and Redux  
 - Practice with **React Hooks** (useEffect, useMemo, custom hooks)  
 - Scoped component styling using **CSS Modules**  
 - Routing implemented with **React Router**  
@@ -26,7 +27,8 @@ It serves as a personal space to experiment, refine patterns, and demonstrate co
 
 ## Technologies Used
 - **React** – Component-based UI  
-- **React Router** – Client-side routing  
+- **React Router** – Client-side routing
+- **Redux** – Global state management  
 - **Zustand** – Global state management  
 - **CSS Modules** – Component-scoped styling  
 
@@ -49,5 +51,5 @@ cd component-garden
 npm install
 
 # Start the development server
-npm start
+npm run dev
 ```
