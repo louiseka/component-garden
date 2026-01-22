@@ -1,18 +1,23 @@
+.subHeading {
+  margin: 0 0.5em;
+}
+
 .textContainer {
-  margin: 2em;
-}
-
-.componentDescription {
-  margin: 0.5em 0 1.5em;
-}
-
-.componentLink:hover,
-.componentLink:active,
-.componentLink:focus {
-  border-bottom: 1.5px solid var(--secondary-color);
+  margin: 1em 0.5em;
+  font-size: 1rem;
 }
 
 .componentContainer {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .subHeading {
+    margin: 1em 1.5em 0.5em;
+  }
+
+  .textContainer {
+    margin: 1em 2em 2em;
+  }
 }

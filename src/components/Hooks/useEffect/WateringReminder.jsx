@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./WateringReminder.module.css";
 
-import CodeButton from "../../Components/CodeButton/CodeButton";
-
 export default function WateringReminder() {
   const [message, setMessage] = useState("");
   const [count, setCount] = useState(0);
@@ -47,11 +45,6 @@ export default function WateringReminder() {
         ></img>
       </div>
 
-      <CodeButton
-        href={
-          "https://github.com/louiseka/component-garden/blob/main/src/components/Hooks/useEffect/WateringReminder.jsx"
-        }
-      />
       <div className={styles.content_container}>
         <div>
           <p>

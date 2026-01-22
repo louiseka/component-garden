@@ -1,54 +1,82 @@
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
+  margin: 0.8em auto;
+  width: 100%;
+  max-width: 900px;
   border-radius: var(--border-radius-lg);
   border: var(--border-thin);
   box-shadow: var(--box-shadow-grey);
-  height: 500px;
-  width: 900px;
-  position: relative;
-}
-
-.plant_container,
-.content_container {
-  margin: 1em 2em 3em;
+  box-sizing: border-box;
 }
 
 .plant_container {
-  width: 500px;
+  width: 100%;
+  max-width: 360px;
+  height: 360px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  position: relative;
 }
 
 .content_container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin: 1.2em;
+  width: 100%;
 }
 
 .text_bold {
   font-weight: 500;
 }
 
+.button_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 1em 0 1em;
+}
+
 .action_button {
   border: none;
   border-radius: 5px;
   font-family: var(--primary-font);
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 1em 1.5em;
-  margin: 1.8em 1em 0 0;
   cursor: pointer;
+  flex: 1;
+  min-width: 140px;
+  max-width: 160px;
+}
+
+.green_button {
+  background-color: var(--green-color);
+  color: var(--text-color-white);
+}
+
+.red_button {
+  background-color: var(--red-color);
+  color: var(--text-color-white);
+}
+
+.red_message {
+  color: var(--red-color);
+  font-weight: 700;
 }
 
 .soil_img {
-  max-width: 300px;
+  width: 80%;
+  max-width: 280px;
+  bottom: 0;
   position: absolute;
   z-index: 1;
 }
 
 .flower_img {
-  max-width: 380px;
+  width: 90%;
+  max-width: 320px;
   margin: 1em 0;
   z-index: 2;
   opacity: 0;
@@ -58,23 +86,13 @@
 }
 
 .plant_img {
-  height: var(--height, 100px);
-  transition: height 0.3s ease, background-color 0.3s ease;
+  height: 70%;
+  max-height: 280px;
   z-index: 2;
   margin: 2.8em 0;
-  animation: growUp 0.8s ease forwards;
+  transform: scale(var(--scale));
   transform-origin: bottom center;
-}
-
-@keyframes growUp {
-  0% {
-    opacity: 0;
-    transform: scale(0.7) translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
+  transition: transform 0.3s ease;
 }
 
 @keyframes bloomIn {
@@ -89,5 +107,28 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .content_container {
+    margin: 1em 2em 3em;
+  }
+
+  .plant_container {
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .plant_img {
+    max-height: 400px;
+  }
+  .soil_img {
+    max-width: 300px;
   }
 }

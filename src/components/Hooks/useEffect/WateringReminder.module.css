@@ -1,11 +1,13 @@
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
+  margin: 0.8em auto;
   border-radius: var(--border-radius-lg);
   border: var(--border-thin);
   box-shadow: var(--box-shadow-grey);
   height: auto;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   position: relative;
 }
 
@@ -16,17 +18,20 @@
 }
 
 .plant_container {
-  width: 500px;
+  width: 100%;
+  max-width: 360px;
+  height: 360px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  position: relative;
 }
 
 .content_container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 3.5em 0 0;
+  margin: 1.5em 1em 0;
 }
 
 .text_bold {
@@ -39,18 +44,22 @@
   font-family: var(--primary-font);
   font-size: 1.1rem;
   padding: 1em 1.5em;
-  margin: 1.8em 1em 1em 0;
   cursor: pointer;
+  color: var(--text-color-white);
+  background-color: var(--green-color);
 }
 
 .soil_img {
-  max-width: 300px;
+  width: 80%;
+  max-width: 280px;
+  bottom: 0;
   position: absolute;
   z-index: 1;
 }
 
 .flower_img {
-  max-width: 350px;
+  width: 90%;
+  max-width: 280px;
   margin: 1em 0;
   z-index: 2;
   opacity: 0;
@@ -60,8 +69,11 @@
 }
 
 .plant_img {
-  height: 350px;
-  transition: height 0.3s ease, background-color 0.3s ease;
+  height: 70%;
+  max-height: 280px;
+  transition:
+    height 0.3s ease,
+    background-color 0.3s ease;
   z-index: 2;
   margin: 0 0 2em;
   animation: growUp 0.8s ease forwards;
@@ -91,5 +103,22 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+  .plant_container {
+    max-width: 400px;
+    height: 400px;
+  }
+  .plant_img {
+    max-height: 400px;
+  }
+  .soil_img {
+    max-width: 300px;
   }
 }

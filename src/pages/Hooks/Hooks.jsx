@@ -1,5 +1,6 @@
 import styles from "./Hooks.module.css";
 import { Outlet, NavLink } from "react-router-dom";
+import CodeButton from "../../components/Components/CodeButton/CodeButton";
 
 export default function Hooks() {
   return (
@@ -10,6 +11,7 @@ export default function Hooks() {
         useEffect. These examples show how state changes and side effects work
         together to create dynamic, reactive UIs.
       </p>
+
       <div>
         <nav className={styles.links}>
           <NavLink
