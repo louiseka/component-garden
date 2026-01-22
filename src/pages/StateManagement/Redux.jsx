@@ -1,10 +1,11 @@
 import { Provider } from "react-redux";
 import { store } from "../../state/store";
 
-import WateringReminder from "../../components/StateManagement/Redux/WateringReminder/WateringReminder";
 import styles from "./Redux.module.css";
 
 import RandomFox from "../../components/StateManagement/Redux/RandomFox/RandomFox";
+import CodeButton from "../../components/Components/CodeButton/CodeButton";
+import WateringReminder from "../../components/StateManagement/Redux/WateringReminder/WateringReminder";
 
 export default function Redux() {
   return (
@@ -16,6 +17,11 @@ export default function Redux() {
           Toolkit to manage the global list of plants, with useSelector to read
           state and useDispatch to add new plants efficiently.
         </p>
+        <CodeButton
+          href={
+            "https://github.com/louiseka/component-garden/blob/main/src/components/StateManagement/Redux/WateringReminder/WateringReminder.jsx"
+          }
+        />
       </div>
       <div className={styles.componentContainer}>
         <Provider store={store}>
