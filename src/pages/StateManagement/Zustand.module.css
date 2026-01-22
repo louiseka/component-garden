@@ -1,8 +1,23 @@
-.text {
-  margin: 2em;
+.subHeading {
+  margin: 0 0.5em;
+}
+
+.textContainer {
+  margin: 1em 0.5em;
+  font-size: 1rem;
 }
 
 .componentContainer {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .subHeading {
+    margin: 1em 1.5em 0.5em;
+  }
+
+  .textContainer {
+    margin: 1em 2em 2em;
+  }
 }

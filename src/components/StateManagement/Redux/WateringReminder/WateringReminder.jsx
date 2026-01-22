@@ -15,11 +15,11 @@ export default function WateringReminder() {
 
   return (
     <section className={styles.wrapper}>
-      <div>
+      <div className={styles.form_container}>
         <form onSubmit={handleSubmit}>
           <fieldset className={styles.form_fieldset}>
             <label className={styles.form_label} htmlFor="reminder">
-              Add a plant to your Watering Reminder list
+              Add a plant to your reminder
             </label>
             <input
               className={styles.form_input}

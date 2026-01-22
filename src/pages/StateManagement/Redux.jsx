@@ -10,8 +10,8 @@ import WateringReminder from "../../components/StateManagement/Redux/WateringRem
 export default function Redux() {
   return (
     <section>
+      <h3 className={styles.subHeading}>Your watering reminder</h3>
       <div className={styles.textContainer}>
-        <h3>Your watering reminder</h3>
         <p>
           Watering Reminder lets users add plant reminders. It uses Redux
           Toolkit to manage the global list of plants, with useSelector to read
@@ -28,7 +28,7 @@ export default function Redux() {
           <WateringReminder />
         </Provider>
       </div>
-      <div className={styles.textContainer}>
+      {/* <div className={styles.textContainer}>
         <h3>Look, there's a fox in the Garden!</h3>
         <p>....</p>
       </div>
@@ -36,7 +36,7 @@ export default function Redux() {
         <Provider store={store}>
           <RandomFox />
         </Provider>
-      </div>
+      </div> */}
     </section>
   );
 }

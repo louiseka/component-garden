@@ -4,7 +4,7 @@ import CodeButton from "../../components/Components/CodeButton/CodeButton";
 
 export default function UseState() {
   return (
-    <div className={styles.wrapper}>
+    <section>
       <h3 className={styles.subHeading}>Water the Plant </h3>
       <div className={styles.textContainer}>
         <p>
@@ -21,6 +21,6 @@ export default function UseState() {
       <div className={styles.componentContainer}>
         <PlantGrowth />
       </div>
-    </div>
+    </section>
   );
 }

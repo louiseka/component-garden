@@ -5,7 +5,7 @@ import styles from "./StateManagement.module.css";
 export default function StateManagement() {
   return (
     <section className={styles.wrapper}>
-      <h1 className={styles.heading}>StateManagement</h1>
+      <h1 className={styles.heading}>State Management</h1>
       <p className={styles.tagline}>
         Examples of managing and sharing state using Redux and Zustand. This
         page highlights common patterns for predictable updates, global state,

@@ -6,8 +6,8 @@ import styles from "./Zustand.module.css";
 export default function Zustand() {
   return (
     <section>
-      <div className={styles.text}>
-        <h3>Your plant wishlist</h3>
+      <h3 className={styles.subHeading}>Your plant wishlist</h3>
+      <div className={styles.textContainer}>
         <p>
           A form-based component that lets users add plants to a wishlist using
           Zustand for state management. New plants are added instantly and
