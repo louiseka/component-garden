@@ -3,8 +3,11 @@
   --primary-color: #00a86b;
   --secondary-color: #ffb6b9;
   --text-color: #18191a;
+  --text-color-white: #fbfcf8;
   --bg-color: #fbfcf8;
   --bg-color-footer: #ffeff1;
+  --green-color: #007c4e;
+  --red-color: #a8003d;
 
   /* Font */
   --primary-font: "Montserrat", sans-serif;
