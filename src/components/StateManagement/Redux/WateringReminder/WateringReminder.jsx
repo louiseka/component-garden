@@ -10,8 +10,9 @@ export default function WateringReminder() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const plantName = e.target.elements.reminder.value;
-    dispatch(addPlant(plantName.trim()));
+    let plantName = e.target.elements.reminder.value.trim();
+    plantName = plantName.charAt(0).toUpperCase() + plantName.slice(1);
+    dispatch(addPlant(plantName));
     e.target.reset();
   };
 
