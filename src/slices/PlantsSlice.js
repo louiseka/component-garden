@@ -5,10 +5,16 @@ const plantsSlice = createSlice({
   initialState: [],
   reducers: {
     addPlant: (state, action) => {
-      state.push(action.payload);
+      state.push({ name: action.payload, watered: false });
+    },
+    toggleWatered: (state, action) => {
+      const plant = state.find((plant) => plant.name === action.payload);
+      if (plant) {
+        plant.watered = !plant.watered;
+      }
     },
   },
 });
 
 export default plantsSlice.reducer;
-export const { addPlant } = plantsSlice.actions;
+export const { addPlant, toggleWatered } = plantsSlice.actions;
