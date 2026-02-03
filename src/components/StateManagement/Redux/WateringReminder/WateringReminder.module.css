@@ -97,6 +97,27 @@
   color: var(--blue-color);
 }
 
+/* Checked List */
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.wateredItem {
+  background: #e7f4e7;
+  border-color: #b7e2b7;
+}
+
+.wateredStatus {
+  color: var(--green-color);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 @media (min-width: 768px) {
   .wrapper {
     margin: 0.8em auto;
