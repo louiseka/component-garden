@@ -1,7 +1,6 @@
-import { FaPlus, FaDroplet, FaSeedling } from "react-icons/fa6";
-
+import { FaPlus, FaDroplet, FaSeedling, FaCheck } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
-import { addPlant } from "../../../../slices/PlantsSlice";
+import { addPlant, toggleWatered } from "../../../../slices/PlantsSlice";
 import styles from "./WateringReminder.module.css";
 
 export default function WateringReminder() {
@@ -45,12 +44,31 @@ export default function WateringReminder() {
           <h4 className={styles.containerHeadings}>Reminders</h4>
           <ul>
             {plants.map((plant) => (
-              <li className={styles.listItem} key={plant}>
+              <li
+                className={`${styles.listItem} ${
+                  plant.watered ? styles.wateredItem : ""
+                }`}
+                key={plant}
+              >
                 <span className={styles.iconContainer}>
+                  <input
+                    className={styles.checkbox}
+                    type="checkbox"
+                    checked={plant.watered}
+                    onChange={() => dispatch(toggleWatered(plant.name))}
+                  />
+
                   <FaSeedling className={styles.seedIcon} />
-                  {plant}
+                  {plant.name}
                 </span>
-                <FaDroplet className={styles.dropletIcon} />
+
+                {plant.watered ? (
+                  <span className={styles.wateredStatus}>
+                    <FaCheck /> Watered
+                  </span>
+                ) : (
+                  <FaDroplet className={styles.dropletIcon} />
+                )}
               </li>
             ))}
           </ul>
