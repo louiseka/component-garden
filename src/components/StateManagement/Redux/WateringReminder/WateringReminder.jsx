@@ -1,3 +1,5 @@
+import { FaPlus, FaDroplet, FaSeedling } from "react-icons/fa6";
+
 import { useDispatch, useSelector } from "react-redux";
 import { addPlant } from "../../../../slices/PlantsSlice";
 import styles from "./WateringReminder.module.css";
@@ -15,35 +17,44 @@ export default function WateringReminder() {
 
   return (
     <section className={styles.wrapper}>
+      <h3 className={styles.containerHeadings}>Remember to water</h3>
       <div className={styles.form_container}>
         <form onSubmit={handleSubmit}>
           <fieldset className={styles.form_fieldset}>
             <label className={styles.form_label} htmlFor="reminder">
-              Add a plant to your reminder
+              Add a plant
             </label>
             <input
               className={styles.form_input}
               type="text"
               name="reminder"
               id="reminder"
-              placeholder="Rose"
+              placeholder="E.g. Roses, Potatoes, Strawberries.."
               required
             />
           </fieldset>
           <button type="submit" className={styles.form_button}>
+            <FaPlus />
             Add a reminder
           </button>
         </form>
       </div>
-      <div className={styles.list}>
-        <h3>Remember to water</h3>
-
-        <ul>
-          {plants.map((plant) => (
-            <li key={plant}>{plant}</li>
-          ))}
-        </ul>
-      </div>
+      {plants.length > 0 && (
+        <div className={styles.list}>
+          <h4 className={styles.containerHeadings}>Reminders</h4>
+          <ul>
+            {plants.map((plant) => (
+              <li className={styles.listItem} key={plant}>
+                <span className={styles.iconContainer}>
+                  <FaSeedling className={styles.seedIcon} />
+                  {plant}
+                </span>
+                <FaDroplet className={styles.dropletIcon} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </section>
   );
 }

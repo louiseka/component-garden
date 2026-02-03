@@ -1,37 +1,41 @@
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  max-width: 900px;
-  margin: 0.8em auto;
+  max-width: 500px;
+  margin: 1em 0.5em;
+  padding: 1em 1.5em;
   border-radius: var(--border-radius-lg);
   border: var(--border-thin);
   box-shadow: var(--box-shadow-grey);
   box-sizing: border-box;
 }
 
+/* Typography */
+
+.containerHeadings {
+  margin: 1em 0;
+}
+
+/* Form */
+
 .form_container {
-  margin: 1.2em;
+  border-top: var(--border-thin);
 }
 
 .form_fieldset {
   border: none;
   display: flex;
   flex-direction: column;
-  margin: 3em 0 0;
   padding: 0;
 }
 
 .form_label {
-  font-size: 1.1rem;
-  padding: 0 0 1em;
+  padding: 1.5em 0 1em;
 }
 
 .form_input {
   padding: 1em;
   font-family: var(--primary-font);
+  font-size: 1rem;
   background-color: transparent;
   border: var(--border-thin);
   border-radius: var(--border-radius-sm);
@@ -42,31 +46,59 @@
   border-radius: 5px;
   font-family: var(--primary-font);
   font-size: 1rem;
+  font-weight: 600;
   background-color: var(--green-color);
   color: var(--text-color-white);
   padding: 1em 1.5em;
   cursor: pointer;
-  flex: 1;
   margin: 1em 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
+/* Reminder List */
+
 .list {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  margin: 1em 2.25em;
+  margin: 2em 0 0;
+  border-top: var(--border-thin);
+}
+
+.list ul {
   line-height: 1.5;
+  padding: 0;
+  list-style: none;
+}
+
+.listItem {
+  border: var(--border-thin);
+  border-radius: var(--border-radius-sm);
+  margin: 0.5em 0;
+  padding: 0.7em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* List Icons */
+
+.iconContainer {
+  display: flex;
+  gap: 5px;
+}
+
+.seedIcon {
+  color: var(--green-color);
+}
+
+.dropletIcon {
+  color: var(--blue-color);
 }
 
 @media (min-width: 768px) {
   .wrapper {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .list {
-    align-items: flex-start;
-    margin: 3em 0;
+    margin: 0.8em auto;
   }
 }
